@@ -1,5 +1,23 @@
 {
-    "dependencies": {
-        "react-redux": "^5.1.0"
-    }
+  "dependencies": {
+    "react-redux": "^5.1.0"
+  },
+  "name": "react-redux-translations",
+  "description": "Simple react redux translation solution",
+  "version": "1.0.0",
+  "main": "index.js",
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/knapcio/react-redux-translations.git"
+  },
+  "author": "Zbigniew Majewski",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/knapcio/react-redux-translations/issues"
+  },
+  "homepage": "https://github.com/knapcio/react-redux-translations#readme"
 }
