@@ -1,10 +1,11 @@
 {
   "dependencies": {
+    "react": "^16.6.0",
     "react-redux": "^5.1.0"
   },
   "name": "react-redux-translations",
   "description": "Simple react redux translation solution",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "main": "index.js",
   "devDependencies": {},
   "scripts": {
