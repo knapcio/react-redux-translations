@@ -1,3 +1,2 @@
-export const translationReducer = require('./src/reducers');
-
-export const Translate = require('./src/components/Translate');
+export { default as translationReducer, actions as actions } from './src/reducers';
+export { default as Translate } from './src/components/Translate';

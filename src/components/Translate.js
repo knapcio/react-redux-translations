@@ -1,7 +1,10 @@
 import React from 'react'
 import { connect } from 'react-redux';
 
-const Translate = props => React.createElement('span', null, props.translations[props.textId]);
+const Translate = props => {
+    const text = props.translations[props.textId];
+    return React.createElement('span', null, text || props.textId)
+};
 
 const mapStateToProps = (state) => { 
     return {
