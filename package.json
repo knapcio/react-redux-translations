@@ -4,7 +4,7 @@
   },
   "name": "react-redux-translations",
   "description": "Simple react redux translation solution",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "main": "index.js",
   "devDependencies": {},
   "scripts": {
