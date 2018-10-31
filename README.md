@@ -33,9 +33,11 @@ import {  actions as translationActions } from 'react-redux-translations';
 
 function* translationSaga() 
 {
-    const lang = navigator.language.split('-')[0] || "en";
+    let lang = navigator.language.split('-')[0];
+
+    if(!["en", "pl"].includes(lang)) lang = "en";
  
-    const translationUrl = '/public/translations/' + lang + '.json';
+    const translationUrl = BASE_URL + '/public/translations/' + lang + '.json';
     const translationFile = yield call(fetch, translationUrl);
     const translation = yield call([translationFile, 'json']);
    
