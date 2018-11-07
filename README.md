@@ -54,6 +54,7 @@ import { Translate } from 'react-redux-translations';
 ```
 
 4. Helper function
+
 If you need to use translation as a pure text you can firstly load translations to the service
 
 ```javascript
