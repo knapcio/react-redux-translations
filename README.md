@@ -52,3 +52,25 @@ import { Translate } from 'react-redux-translations';
 
 <Translate textId="hello_world"/>
 ```
+
+4. Helper function
+If you need to use translation as a pure text you can firstly load translations to the service
+
+```javascript
+import {  translateHelper } from 'react-redux-translations';
+
+function* translationSaga() 
+{
+    // ... previous saga code
+      const translation = yield call([translationFile, 'json']);
+   
+        translateHelper.setTranslations(translation);
+}
+```
+and then use it as a normal function anywhere in your app
+
+```javascript
+import {  translateHelper } from 'react-redux-translations';
+
+translateHelper.translate('hello_world')
+```
